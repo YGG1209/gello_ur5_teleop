@@ -29,6 +29,6 @@ Before running gello_ur5_teleop.py, you must configure the GELLO hardware parame
 Servo IDs、Initial Offsets、Rotation Directions、Gripper Parameters
 (Note: This code does not control the gripper directly. You will need to add your own implementation based on your specific hardware setup.)
 
-This project is mainly a basic shaking operation framework for Gello shaking operation and UR5 data collection.
+This project mainly focuses on the basic teleoperation framework for Gello teleoperation real machine UR5 and UR5 data acquisition.
 
 For more detailed information, please refer to: https://github.com/wuphilipp/gello_software.
