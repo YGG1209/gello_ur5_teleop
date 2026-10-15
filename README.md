@@ -11,16 +11,22 @@ Copy the gello_ur5_teleop.py file from the gello_ur5_teleop repository into the 
 
 ## Installation
 ## Conda Environment Setup
-
+First, install uv if you don't have it:
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+Create and activate a virtual environment:
 ```bash
 conda create -n gello_software python=3.11
 conda activate gello_software 
-cd gello_software
-pip install -r requirements.txt
-pip install -e .
-pip install -e third_party/DynamixelSDK/python
-pip install numpy
-pip install ur_rtde
+uv venv --python 3.11
+source .venv/bin/activate
+git submodule init
+git submodule update
+uv pip install -r requirements.txt
+uv pip install -e .
+uv pip install -e third_party/DynamixelSDK/python
+uv pip install ur_rtde
 ```
 
 ## Note:
