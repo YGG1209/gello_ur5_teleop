@@ -17,12 +17,8 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 Create and activate a virtual environment:
 ```bash
-conda create -n gello_software python=3.11
-conda activate gello_software 
 uv venv --python 3.11
-source .venv/bin/activate
-git submodule init
-git submodule update
+source .venv/bin/activate  # Run this every time you open a new shell
 uv pip install -r requirements.txt
 uv pip install -e .
 uv pip install -e third_party/DynamixelSDK/python
